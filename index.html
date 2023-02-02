@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image" href="/population.png">
+
+</head>
+<body>
+  <div class="container">
+    <h2>Age Calculator</h2>
+    <!-- form for user to fill in the details -->
+   <form>
+    <div class="input-name">
+        <label for="name">Enter Name :</label>
+        <input type="text" id="name" placeholder="Enter Your Name" required>
+    </div>
+    <!-- for input box  -->
+    <div class="box">
+        <div class="input-box">
+            <label for="date">Date :</label>
+            <input type="text" required id="date" placeholder="dd"  minlength="1" maxlength="2">
+        </div>
+        <div class="input-box">
+            <label for="month">Month :</label>
+            <input type="text" required  id="month" placeholder="mm"  minlength="1" maxlength="2" >
+        </div>
+        <div class="input-box">
+            <label for="year">Year :</label>
+            <input type="text" required id="year" placeholder="yyyy"  minlength="4" maxlength="4"> 
+        </div>
+    </div>
+
+    <!-- For submit button -->
+    <div class="btn">
+        <button onclick ="agecalculate()">Submit</button>
+    </div>
+
+    <!-- for Output -->
+    <div class="result" id="agecalculate"></div>   
+   </form>
+       
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
